@@ -1,0 +1,2 @@
+class ProjUserController < ApplicationController
+end

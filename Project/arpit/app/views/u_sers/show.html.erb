@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>First name:</b>
+  <%= @u_ser.first_name %>
+</p>
+
+<p>
+  <b>Last name:</b>
+  <%= @u_ser.last_name %>
+</p>
+
+<p>
+  <b>Emp:</b>
+  <%= @u_ser.emp_id %>
+</p>
+
+<p>
+  <b>Date of birth:</b>
+  <%= @u_ser.date_of_birth %>
+</p>
+
+<p>
+  <b>Gender:</b>
+  <%= @u_ser.gender %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%= @u_ser.address %>
+</p>
+
+<p>
+  <b>Hobbies:</b>
+  <%= @u_ser.hobbies %>
+</p>
+
+
+<%= link_to 'Edit', edit_u_ser_path(@u_ser) %> |
+<%= link_to 'Back', u_sers_path %>
