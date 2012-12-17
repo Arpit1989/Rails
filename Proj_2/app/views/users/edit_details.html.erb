@@ -1,0 +1,12 @@
+<h2>Edit Your Details<h2> 
+<%= simple_form_for user, :url => user_path(user), :html => {:method => :put, :class => 'form-horizontal' } do |f| %>
+ 
+
+ <%= f.input :firstname, :required => true %>
+ <%= f.input :lastname, :autofocus => true %>
+ <%= f.input :hobbies, :required => true %>
+ <%= f.input :interest, :autofocus => true %>
+ <%= f.input :Emp_no, :required => true %>
+ <%= f.input :about_user, :autofocus => true %>
+ <%= f.button :submit, 'edit_details', :class => 'btn-primary' %>
+ <%end%>
