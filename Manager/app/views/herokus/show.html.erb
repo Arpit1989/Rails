@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Heroku url:</b>
+  <%= @heroku.heroku_url %>
+</p>
+
+<p>
+  <b>Project:</b>
+  <%= @heroku.Project %>
+</p>
+
+
+<%= link_to 'Edit', edit_heroku_path(@heroku) %> |
+<%= link_to 'Back', herokus_path %>

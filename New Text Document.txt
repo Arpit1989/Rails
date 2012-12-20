@@ -1,0 +1,96 @@
+General Acceptance Criteria for all the application:
+1. Good looking UI (not crude). 
+2. UI can be created or copied to alter for avoiding trademark issues.
+3. Use of AJAX to enhance user experience.
+4. CRUD (Create Read Update Delete) Operation for all objects.
+
+
+Generally Nice to have, but not a must:
+1. Login authentication using Device gem.
+2. User Roles authentication using Cancan gem.
+
+Time Duration: 3 days
+
+=====================================================================================
+
+Assigned To: Ankur Bhatia
+Application: IDoRecall
+Description: 16 card game game with 8 pairs to locate.
+Acceptance Criteria:
+1. 16 cards to be placed as 4*4 card.
+2. One chance would allow turning two cards. If they are same, they will remain open, else turn back.
+3. Once all the cards are turn, total number of attempts to open all cards should be recorded to reflect score.
+4. User can reset the game.
+Reference:http://blog.lib.umn.edu/wolfx450/myblog/Memory-Game-Final.jpg
+
+=====================================================================================
+
+Assigned To: Aakash Sharma
+Application: BirthdayReminder
+Description: Application should be able to manage B'Day dates for people.
+Acceptance Criteria:
+1. Person must have a B'Day date.
+2. Manage a list of email addresses
+3. Email Address can represent a individual or a group for notifying B'Day.
+4. Description required for email in case of a group.
+5. Set up a rake task to trigger email notfication about the B'Day to the notifying list.
+
+=====================================================================================
+
+Assigned To: Himanshu Gupta
+Application: IdeaBoard
+Description: Application should be able to create an idea board, manage queues and idea cards in the queues.
+Acceptance Criteria:
+1. Manage Idea Boards.
+2. Manage Queues in Idea Boards.
+3. Manage Idea Cards in Idea Boards.
+4. Like an Idea
+
+=====================================================================================
+
+Assigned To: Arpit Kulshrestha
+Application: Person Blog-Github Accounts
+Description: Application should be able to manage the list of blog and github urls for people.
+Acceptance Criteria:
+1. Person should have an email and blog or github account.
+1. Person can have:
+ 	Multiple Blog Account URl
+	Multiple Github Account URl
+2. Github Account can have multiple project github url.
+3. Project github url can have one Heroku url.
+
+=====================================================================================
+
+Assigned To: Kanishka Mishra
+Application: FaceMatch
+Description: Application would a quiz to select the name of the person in the picture.
+Acceptance Criteria:
+1. Manage Person profiles with their picture.
+2. On Starting the quiz, Picture should appear with four name options as a quiz.
+3. Submiting the answer will verify the answer with the profile details of the person in picture.
+4. Sequence of picture should be random each time.
+5. User can opt to see next picture or close the quiz.
+6. Closing the quiz will give a final score.
+
+=====================================================================================
+
+Assigned To: Md. Faizan Ahmad
+Application: FileBoard
+Description: Application will allow to upload files to the server and manage them with a fancy UI.
+Acceptance Criteria:
+1. List of files uploaded to the file server.
+2. File should have icon, type, size, decription information. 
+3. Option to upload new file to the server.
+4. Option to delete the existing file and information.
+5. The description of the file should be editable.
+
+=====================================================================================
+
+Assigned To: Hrishita Vaish
+Application: NewsBoard
+Description: Application to display news using feeds using fancy UI.
+Acceptance Criteria:
+1. Tab bassed UI to select 'Latest News', 'Popular News', 'Business News' and 'Sports News'. 
+2. Latest News Page should refresh every two mins to pull latest feeds and update the news on page.
+3. The numbers of tabs display and their position should be managable by user.
+

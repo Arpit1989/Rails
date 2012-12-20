@@ -1,0 +1,15 @@
+<h2>Sign in</h2>
+<%= simple_form_for(resource, :as => resource_name, :url => session_path(resource_name), :html => {:class => 'form-vertical' }) do |f| %>
+   <%= f.input :email,:label => "Enter E-Mail Address",:placeholder =>"youremail@example.com", :autofocus => true %>
+  <%= f.input :name ,:label => "Github User Name",:format => { :with => /\A[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]+\z/ ,
+                     :message => 'Invalid Github-Url! Please provide a valid Github-Url address'},
+        :on => :create, :autofocus => true %>
+  <p> Or <br/></p>
+  <%= f.input :blogurl,:label => " Enter Your Blog's Url",:placeholder => "https://yourblog.com",:format => { :with => /\A[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]+\z/ ,
+                     :message => 'Invalid Blog-Url! Please provide a valid Blog address'},
+        :on => :create, :autofocus => true %>
+  <%= f.input :password ,:label => "*Please enter Password",:hint => "Min 6 charc." %>
+  <%= f.input :remember_me, :as => :boolean if devise_mapping.rememberable? %>
+  <%= f.button :submit, "Sign in", :class => 'btn-primary' %>
+<% end %>
+<%= render "devise/shared/links" %>

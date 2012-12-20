@@ -1,0 +1,57 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>User:</b>
+  <%= @github.User %>
+</p>
+
+<p>
+  <b>Githuburl:</b>
+  <%= @github.GithubUrl %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%= @github.title %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @github.Description %>
+</p>
+
+<h2>Projects</h2>
+<% @github.Project_url.each do |project_url| %>
+  <p>
+    <b>Commenter:</b>
+    <%= project_url.Project_Url %>
+  </p>
+ 
+  <p>
+    <b>Details of Project:</b>
+    <%= project_url.description %>
+  </p>
+<% end %>
+
+<h2>Add Your Project</h2>
+<%= form_for([@github, @github.projects.build]) do |f| %>
+  <div class="field">
+    <%= f.label :Project_url %><br />
+    <%= f.text_field :Project_Url %>
+  </div>
+  
+  <div class ="field">
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :Description %><br />
+    <%= f.text_area :Description %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
+
+<%= link_to 'Edit', edit_github_path(@github) %> |
+<%= link_to 'Back', githubs_path %>

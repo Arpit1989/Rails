@@ -18,4 +18,4 @@ puts 'New user created: ' << user.name
 user2 = User.create! :name => 'Praggo', :email => 'praggo@example.com', :password => 'praggo', :password_confirmation => 'praggo'
 puts 'New user created: ' << user2.name
 user.add_role :admin
-user2.add_role :VIP
+user2.add_role :Developer
